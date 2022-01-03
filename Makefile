@@ -22,3 +22,6 @@ clean:
 	rm -f ./bin/*
 run:
 	./bin/projectXYZ
+
+mem:
+	valgrind --leak-check=full --show-leak-kinds=all ./bin/projectXYZ
